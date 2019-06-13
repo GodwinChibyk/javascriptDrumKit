@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Drum Kit By Godwin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Press the corresponing keys on your keyboad to play</h2>
+  <div class="keys">
+    <div class="key" data-keycode="65">
+      <kbd>a</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div class="key" data-keycode="83">
+      <kbd>s</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div class="key" data-keycode="68">
+      <kbd>d</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div class="key" data-keycode="70">
+      <kbd>f</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div class="key" data-keycode="71">
+      <kbd>g</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div class="key" data-keycode="72">
+      <kbd>h</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div class="key" data-keycode="74">
+      <kbd>j</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div class="key" data-keycode="75">
+      <kbd>k</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div class="key" data-keycode="76">
+      <kbd>l</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <!-- Sounds to be played when each key on the screen is pressed -->
+  <audio src="sounds/clap.wav" data-keycode="65"></audio>
+  <audio src="sounds/hihat.wav" data-keycode="83"></audio>
+  <audio src="sounds/kick.wav" data-keycode="68"></audio>
+  <audio src="sounds/openhat.wav" data-keycode="70"></audio>
+  <audio src="sounds/boom.wav" data-keycode="71"></audio>
+  <audio src="sounds/ride.wav" data-keycode="72"></audio>
+  <audio src="sounds/snare.wav" data-keycode="74"></audio>
+  <audio src="sounds/tom.wav" data-keycode="75"></audio>
+  <audio src="sounds/tink.wav" data-keycode="76"></audio>
+
+  <script src="event.js"></script>
+</body>
+</html>
